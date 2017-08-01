@@ -45,5 +45,4 @@ testem.log
 Thumbs.db
 
 # Customization
-package-lock.json/
 package-lock.json
