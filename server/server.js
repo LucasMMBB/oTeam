@@ -3,6 +3,13 @@ var express = require('express');
 var app = express();
 var parser = require('body-parser');
 
+// set up
+var mongoose = require('mongoose');
+//mongoose.connect('mongodb://maoxul:Lmx931220@ds143201.mlab.com:43201/dreamteamlist');
+mongoose.connect('mongodb://localhost/team');
+
+var Member = require('./app/models/team');
+
 app.use(parser.urlencoded({ extended: true}));
 app.use(parser.json());
 
